@@ -6,8 +6,36 @@
   --hero-color: #2e2f42;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+
+.container{
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .link {
@@ -17,10 +45,19 @@ body {
   list-style: none;
 }
 .header {
-  background-color: var(--primary-bg-color)
+  background-color: var(--primary-bg-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E7E9FC;
+  
 }
 
+.header-container{
+  display: flex;
+}
 .header-navigation {
+  display: flex;
+  margin-right: auto;
 }
 
 .header-logo {
@@ -31,6 +68,7 @@ body {
   line-height: 1.33;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  margin-right: 76px;
 }
 
 .logo-blue {
@@ -44,9 +82,11 @@ body {
 }
 
 .header-list {
+  display: flex;
 }
 
 .header-item {
+  margin-left: 40px;
 }
 
 .header-link {
@@ -61,10 +101,12 @@ body {
 .header-link:focus {
   color: var(--action-color);
 }
+.contacts-list{
+  display: flex;
+}
 
 .header-email {
   font-style: normal;
- 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -77,16 +119,17 @@ body {
 
 .header-tel {
   font-style: normal;
-  
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-left: 40px;
 }
 
 /* hero */
 .hero {
-background-color:var(--hero-color);
+  background-color: var(--hero-color);
+  
 }
 
 .hero-title {
@@ -96,13 +139,12 @@ background-color:var(--hero-color);
   text-align: center;
   letter-spacing: 0.02em;
   color: white;
+  padding-top: 188px;
 }
 
 .hero-button {
   width: 169px;
   height: 56px;
-  left: 636px;
-  top: 428px;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -111,7 +153,13 @@ background-color:var(--hero-color);
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  cursor: pointer;
+  margin-top: 48px;
+  padding: 0;
+ margin-bottom: 188px;
+ margin-right: 480px;
+ margin-left: 480px;
+  
+  
 }
 
 .hero-button:hover,
@@ -121,16 +169,24 @@ background-color:var(--hero-color);
 
 /* advantages section */
 .advantage {
+ padding-top: 120px;
+  
 }
 
 .advantage-title {
-    display: none;
+  display: none;
+  
 }
 
 .advantage-list {
+  display: flex;
 }
 
 .advantage-item {
+  width: 264px;
+}
+.advantage .advantage-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantage-item-title {
@@ -142,15 +198,21 @@ background-color:var(--hero-color);
 }
 
 .advantage-paragraph {
-  
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px;
 }
 
 /* what we are doing/ our services */
+.container-services{
+  width: 1158px;
+  margin: 0 auto;
+}
 .services {
+  padding-top: 120px; 
+  padding-bottom: 120px;
 }
 
 .services-title {
@@ -161,9 +223,13 @@ background-color:var(--hero-color);
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-text-color);
+  margin-bottom: 72px;
 }
 
 .services-list {
+  display: flex;
+  justify-content: space-between ;
+
 }
 
 .services-item {
@@ -174,7 +240,7 @@ background-color:var(--hero-color);
 /* team */
 
 .team {
-  background-color: var(--secondary-bg-color)
+  background-color: var(--secondary-bg-color);
 }
 
 .team-title {
@@ -185,9 +251,13 @@ background-color:var(--hero-color);
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-text-color);
+  padding-top: 120px;
 }
 
 .team-list {
+  display: flex;
+  margin-top: 72px;
+  padding-bottom: 120px;
 }
 
 .team-item {
@@ -199,9 +269,13 @@ background-color:var(--hero-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  margin-right: 24px;
 }
-
+.team-item:last-child{
+  margin-right: 0px;
+}
 .team-image {
+  margin-bottom: 32px;
 }
 
 .team-name {
@@ -211,22 +285,22 @@ background-color:var(--hero-color);
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
 }
 .team-position {
-  
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 32px;
 }
 /* footer */
-footer {
-  width: 1440px;
-  height: 310px;
-  left: 0px;
-  top: 2280px;
-  background: var(--hero-color)
+.footer {
+  background: var(--hero-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 }
 .footer-logo {
   font-weight: 800;
@@ -236,13 +310,17 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  margin-top: 100px;
+  margin-bottom: 16px;
 }
+
 .footer-paragraph {
-  
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
+  width: 264px;
+  height: 72px;
 }
 
 /* portfolio */
@@ -252,15 +330,23 @@ footer {
 }
 
 .projects-title {
-    display: none;
+  display: none;
 }
 
 .projects-list {
+  padding-top: 96px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 72px;
 }
 
 .projects-item {
+  margin-left: 24px;
+  padding-bottom: 25px;
 }
-
+.projects-item:first-child{
+  margin-left: 0;
+}
 .projects-button {
   width: 116px;
   height: 48px;
@@ -283,23 +369,36 @@ footer {
 }
 
 /* наши работы */
-.jobs {
+.jobs-container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+
 }
 
 .jobs-title {
-    display: none;
+  display: none;
 }
 
 .jobs-list {
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+
 }
 
 .jobs-item {
+outline: 1px solid #E7E9FC;
 }
 
-.jobs-link {
-}
+.jobs-link {}
+
 
 .jobs-pic {
+  margin-bottom: 32px;
 }
 
 .jobs-aftertitle {
@@ -308,6 +407,8 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .jobs-paragraph {
@@ -315,4 +416,7 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  
 }

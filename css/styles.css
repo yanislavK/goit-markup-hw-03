@@ -27,6 +27,11 @@ address {
   font-style: normal;
 }
 
+image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container{
   width: 1158px;
   padding-left: 15px;
@@ -129,6 +134,9 @@ body {
 /* hero */
 .hero {
   background-color: var(--hero-color);
+  padding-bottom: 188px;
+  padding-top: 188px;
+  text-align: center;
   
 }
 
@@ -139,7 +147,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: white;
-  padding-top: 188px;
+  
 }
 
 .hero-button {
@@ -155,9 +163,7 @@ body {
   color: #ffffff;
   margin-top: 48px;
   padding: 0;
- margin-bottom: 188px;
- margin-right: 480px;
- margin-left: 480px;
+ 
   
   
 }
@@ -228,7 +234,7 @@ body {
 
 .services-list {
   display: flex;
-  justify-content: space-between ;
+  gap: 24px;
 
 }
 
@@ -241,6 +247,8 @@ body {
 
 .team {
   background-color: var(--secondary-bg-color);
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .team-title {
@@ -251,21 +259,16 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-text-color);
-  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  margin-top: 72px;
-  padding-bottom: 120px;
 }
 
 .team-item {
   background-color: var(--primary-bg-color);
   width: 264px;
-  height: 380px;
-  left: 1020px;
-  top: 1780px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -275,9 +278,14 @@ body {
   margin-right: 0px;
 }
 .team-image {
-  margin-bottom: 32px;
+  
 }
 
+.team-information{
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -286,6 +294,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   margin-bottom: 8px;
+
 }
 .team-position {
   font-size: 16px;
@@ -293,7 +302,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 32px;
 }
 /* footer */
 .footer {
@@ -306,12 +314,11 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
-  margin-top: 100px;
   margin-bottom: 16px;
+  display: block;
 }
 
 .footer-paragraph {
@@ -320,13 +327,15 @@ body {
   letter-spacing: 0.02em;
   color: #e7e9fc;
   width: 264px;
-  height: 72px;
 }
 
 /* portfolio */
 
 .projects {
   background-color: var(--primary-bg-color);
+  margin-top: 96px;
+  margin-bottom: 120px;
+
 }
 
 .projects-title {
@@ -334,15 +343,14 @@ body {
 }
 
 .projects-list {
-  padding-top: 96px;
   display: flex;
   justify-content: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .projects-item {
   margin-left: 24px;
-  padding-bottom: 25px;
+
 }
 .projects-item:first-child{
   margin-left: 0;
@@ -369,14 +377,6 @@ body {
 }
 
 /* наши работы */
-.jobs-container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  padding-bottom: 120px;
-
-}
 
 .jobs-title {
   display: none;
@@ -385,20 +385,19 @@ body {
 .jobs-list {
 display: flex;
 flex-wrap: wrap;
-column-gap: 24px;
+column-gap: 23px;
 row-gap: 48px;
 
 }
 
 .jobs-item {
-outline: 1px solid #E7E9FC;
+
 }
 
 .jobs-link {}
 
 
 .jobs-pic {
-  margin-bottom: 32px;
 }
 
 .jobs-aftertitle {
@@ -408,15 +407,19 @@ outline: 1px solid #E7E9FC;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  padding-left: 16px;
 }
 
 .jobs-paragraph {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
-  margin-bottom: 32px;
-  padding-left: 16px;
-  
+  color: #434455;  
+}
+
+.jobs-information{
+  padding: 32px 54px 64px 16px;
+  border-left: 1px solid #E7E9FC;
+  border-right:1px solid #E7E9FC;;
+  border-bottom: 1px solid #E7E9FC;
+
 }

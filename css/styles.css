@@ -333,8 +333,8 @@ body {
 
 .projects {
   background-color: var(--primary-bg-color);
-  margin-top: 96px;
-  margin-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 120px;
 
 }
 
@@ -417,7 +417,7 @@ row-gap: 48px;
 }
 
 .jobs-information{
-  padding: 32px 54px 64px 16px;
+  padding: 32px 16px 64px 16px;
   border-left: 1px solid #E7E9FC;
   border-right:1px solid #E7E9FC;;
   border-bottom: 1px solid #E7E9FC;
